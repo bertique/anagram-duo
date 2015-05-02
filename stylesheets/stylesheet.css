@@ -1,6 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
+	 Modifications by Michael Dick
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -102,6 +103,10 @@ header h2 {
   margin-bottom: 40px;
 }
 
+input {
+	margin-right: 14px;
+}
+
 a.button {
   display: block;
   float: left;
@@ -163,6 +168,11 @@ a.button span {
 }
 #view-on-github {
   margin-right: 0;
+}
+
+#check-strings span, #clear-inputs span {
+	padding-left: 0;
+	text-align:center;
 }
 
 code, pre {
@@ -237,6 +247,9 @@ form {
 
 }
 
+label {
+    white-space:nowrap;
+}
 
 /* GENERAL ELEMENT TYPE STYLES */
 
@@ -364,6 +377,12 @@ footer a:hover {
     width: 94%;
     margin: 0 auto;
   }
+	#check-strings {
+		margin-bottom: 10px;
+	}
+	#wordOne {
+		margin-bottom: 10px;
+	}
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
