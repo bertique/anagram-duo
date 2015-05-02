@@ -15,7 +15,7 @@ function clearInputs() {
 }
 
 function areAnagrams(wordOne, wordTwo) {
-  // The regex removes all special characters and whitespaces
+  // Regex removes all special characters and whitespaces, after http://stackoverflow.com/questions/4374822/javascript-regexp-remove-all-special-characters
   sortedWordOne = wordOne.replace(/[^\w]/gi, '').toLowerCase().split("").sort().join("");
   sortedWordTwo = wordTwo.replace(/[^\w]/gi, '').toLowerCase().split("").sort().join("");
   return sortedWordOne === sortedWordTwo;
